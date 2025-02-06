@@ -1,0 +1,19 @@
+version: 0.2
+
+phases:
+  install:
+    commands :
+       -echo Insallation des dependances
+    pre_build:
+      commands:
+        -echo start prebuild and end it
+    build:
+      commandes:
+         -echo Running build
+    post_build:
+      commands:
+          -echo build completed successfuly
+artifacts:
+  files:
+    -"**/*"
+  base-directory
